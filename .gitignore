@@ -1,1 +1,35 @@
-*env
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables
+.env
+
+# Database files (optional if using SQLite for tests)
+*.sqlite
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Coverage directories
+coverage/
+
+# VSCode settings (optional)
+.vscode/
+
+# npm/Node specific
+package-lock.json
+
+# Postman exports (optional if you don’t want to commit your collection)
+postman/*.json
+
+# Sequelize CLI folders
+migrations/
+seeders/
