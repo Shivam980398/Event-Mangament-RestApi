@@ -1,4 +1,6 @@
 "use strict";
+
+//Event schema
 module.exports = (sequelize, DataTypes) => {
   const Event = sequelize.define(
     "Event",
@@ -43,6 +45,8 @@ module.exports = (sequelize, DataTypes) => {
       modelName: "Event",
     }
   );
+
+  //Define Relationship between user and event
 
   Event.associate = (models) => {
     Event.belongsToMany(models.User, {
